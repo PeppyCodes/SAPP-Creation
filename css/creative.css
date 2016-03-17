@@ -46,8 +46,9 @@ h6 {
 }
 
 .custom-font1 {font-family: 'Exo 2', sans-serif;}
-.custom-font2 {font-family: 'Open Sans', sans-serif;font-size: 30px;font-weight: 700;}
+.custom-font2 {font-family: 'Open Sans', sans-serif;font-size: 28px;font-weight: 700;}
 .custom-font3 {color:#000;}
+.custom-font4 {font-family: 'Kaushan Script', cursive;font-size: 40px;font-weight: 700;}
 
 p {
     margin-bottom: 20px;
