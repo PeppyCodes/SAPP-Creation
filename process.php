@@ -11,7 +11,7 @@ $sparky = new SparkPost($httpAdapter, ['key'=>'YOUR API KEY']);
 try {
 // Build your email and send it!
 $results = $sparky->transmission->send([
-'from'=>'From Envelope <from@sparkpostbox.com>',
+'from'=>'sharanc25@gmail.com',
 'html'=>'<html><body><h1>Congratulations, {{name}}!</h1><p>You just sent your very first mailing!</p></body></html>',
 'text'=>'Congratulations, {{name}}!! You just sent your very first mailing!',
 'substitutionData'=>['name'=>'YOUR FIRST NAME'],
@@ -19,8 +19,8 @@ $results = $sparky->transmission->send([
 'recipients'=>[
 [
 'address'=>[
-'name'=>'YOUR FULL NAME',
-'email'=>'YOUR EMAIL ADDRESS'
+'name'=>'Sharan',
+'email'=>'Sharanc25@gmail.com'
 ]
 ]
 ]
