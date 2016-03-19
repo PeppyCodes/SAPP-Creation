@@ -6,16 +6,14 @@ use GuzzleHttp\Client;
 use Ivory\HttpAdapter\Guzzle6HttpAdapter;
 
 $httpAdapter = new Guzzle6HttpAdapter(new Client());
-$sparky = new SparkPost($httpAdapter, ['key'=>'9ba9a7df02202d283455f92f2710d2b81b40cb9b']);
-
-echo "Working";
+$sparky = new SparkPost($httpAdapter, ['key'=>'faa9dd73426b59b7b84d7331fcaa870bf0dc6907']);
 
 try {
 // Build your email and send it!
 $results = $sparky->transmission->send([
 'from'=>'sharanc25@gmail.com',
-'html'=>'<html><body><h1>Congratulations, {{name}}!</h1><p>You just sent your very first mailing!</p></body></html>',
-'text'=>'Congratulations, {{name}}!! You just sent your very first mailing!',
+'html'=>'<html><body><h1>Congratulations,!</h1><p>You just sent your very first mailing!</p></body></html>',
+'text'=>'Congratulations,!! You just sent your very first mailing!',
 'substitutionData'=>['name'=>'YOUR FIRST NAME'],
 'subject'=>'First Mailing From PHP',
 'recipients'=>[
