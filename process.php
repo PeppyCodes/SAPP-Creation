@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 use Ivory\HttpAdapter\Guzzle6HttpAdapter;
 
 $httpAdapter = new Guzzle6HttpAdapter(new Client());
-$sparky = new SparkPost($httpAdapter, ['key'=>'YOUR API KEY']);
+$sparky = new SparkPost($httpAdapter, ['key'=>'9ba9a7df02202d283455f92f2710d2b81b40cb9b']);
 
 echo "Working";
 
