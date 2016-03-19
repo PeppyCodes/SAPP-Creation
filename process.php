@@ -8,6 +8,8 @@ use Ivory\HttpAdapter\Guzzle6HttpAdapter;
 $httpAdapter = new Guzzle6HttpAdapter(new Client());
 $sparky = new SparkPost($httpAdapter, ['key'=>'YOUR API KEY']);
 
+echo "Working";
+
 try {
 // Build your email and send it!
 $results = $sparky->transmission->send([
