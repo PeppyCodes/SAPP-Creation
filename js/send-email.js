@@ -26,7 +26,7 @@ function sendTheMail() {
     var params = {
         "message": {
             "from_email":"postmaster@sappcreation.com",
-            "to":[{"email":"gr8.karthi@gmail.com"}],
+            "to":[{"email":"sappcreation.tpj@gmail.com"}],
             "subject": "Email from www.sappcreation.com",
             "text": message
         }
