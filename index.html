@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SAPP Creation - Tiruchirapalli</title>
+    <title>Printing Press in Tiruchirapalli | SAPP Creation</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -352,7 +352,8 @@
             <div class="row">
                  
       <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action=" ">
-          <div class="alert alert-success hidden" role="alert">Your message had been sent successfully !!!</div> <!-- Success Message-->
+          <div class="alert alert-success" style="display: none" role="alert">Your message has been sent successfully. We'll contact you as soon as possible. !!!</div> <!-- Success Message-->
+          <div class="alert alert-failure" style="display: none" role="alert">Your message could not be sent. Please Check your internet connection !!!</div> <!-- Failure Message-->          
         <div class="col-sm-5 col-sm-offset-1">
           <div class="form-group">
             <label>Name *</label>
@@ -367,8 +368,8 @@
             <input type="email" id = 'email' required="true" class="form-control">
           </div>
             <div class="form-group hidden">
-            <label>Email</label> <!-- Dude use this field for spam protection-->
-            <input type="number" class="form-control">
+            <label>Zip Code</label> <!-- Dude use this field for spam protection-->
+            <input type="number" id = 'zipcode' class="form-control">
           </div>
           
         </div>
@@ -380,7 +381,7 @@
             <textarea name="message" id="message" required="true" class="form-control" rows="6"></textarea>
           </div>
           <div class="form-group">
-            <button type="submit" name="submit" class="btn btn-primary btn-lg" return false required="true" onclick="sendTheMail(); return false;">Send Message</button>
+            <button type="submit" name="submit" class="btn btn-primary btn-lg" return false required="true" onclick="validator(); return false;">Send Message</button>
           </div>
         </div>
           
