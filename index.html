@@ -350,7 +350,9 @@
             </div>
             <hr>
             <div class="row">
+                 
       <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action=" ">
+          <div class="alert alert-success hidden" role="alert">Your message had been sent successfully !!!</div> <!-- Success Message-->
         <div class="col-sm-5 col-sm-offset-1">
           <div class="form-group">
             <label>Name *</label>
@@ -368,8 +370,9 @@
             <label>Email</label> <!-- Dude use this field for spam protection-->
             <input type="number" class="form-control">
           </div>
-
+          
         </div>
+          
         <div class="col-sm-5">
          
           <div class="form-group">
@@ -380,6 +383,7 @@
             <button type="submit" name="submit" class="btn btn-primary btn-lg" return false required="true" onclick="sendTheMail(); return false;">Send Message</button>
           </div>
         </div>
+          
       </form>
     </div>
         </div>
